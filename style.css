@@ -71,27 +71,28 @@ button:hover{
   width: 64px;
 }
 
-.img-one{
-  position: absolute;
-  left: 0px;
+.img-one img{
+  position: relative;
+  z-index: 4;
 }
 
-.img-two{
+.img-two img{
   position: relative;
-  z-index: -1;
-  left: 30px;
+  right: 60px;
+  z-index: 3;
+
 }
 
-.img-three{
+.img-three img{
   position: relative;
-  z-index: -2;
-  left: -40px;
+  right: 120px;
+  z-index: 2;
 }
 
-.img-four{
+.img-four img{
   position: relative;
-  z-index: -3;
-  left: -110px;
+  right: 190px;
+  z-index: 1;
 }
 
 .artists{
@@ -103,11 +104,12 @@ button:hover{
 
 .artists span{
   margin-top: 40px;
-  margin-left: -80px;
+  margin-left: -180px;
 }
 
 .artists p{
- margin-left: -80px;
+ margin-left: -180px;
+ margin-right: 20px;
  font-weight: 200;
  margin-top: 0;
 }
@@ -195,7 +197,8 @@ button:hover{
 .divide{
   display: grid;
   display: 1fr auto;
-  margin: 0;
+  margin-left:auto;
+  margin-right:auto;
   margin-bottom: 0;
 }
 
@@ -206,6 +209,7 @@ button:hover{
   gap: 100px;
   padding-top: 60px;
   border-right: 1px solid #5A5757;
+  border-left: 1px solid #5A5757;
   border-bottom: 1px solid #5A5757;
   padding-right: 60px;
   padding-bottom: 100px;
